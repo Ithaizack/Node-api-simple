@@ -6,7 +6,7 @@
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Ithaizack/Node-api-simple)
 
 
-<img src="" alt="exemplo imagem">
+<img src="./Captura de tela 2022-11-18 002217" alt="exemplo imagem">
 
 > Uma aplicação em node desenvolvida para ser base de uma api simple, contém sistema "GET" para realizar uma requesição da api uma de "POST" para realizar envio para a api e logo será implementado mais metodos.
 ### Ajustes e melhorias
