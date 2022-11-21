@@ -2,17 +2,22 @@
   "name": "apirest",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "api/index.js",
   "type": "module",
   "scripts": {
     "start": "node .",
-    "dev": "nodemon index.js"
+    "dev": "nodemon api/index.js"
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "nodemon": "^2.0.20"
+  },
   "dependencies": {
+    "@vercel/node": "^2.6.3",
     "express": "^4.18.2",
     "nodemon": "^2.0.20",
-    "vercel": "^28.5.5"
+    "vercel": "^19.1.2"
   }
 }

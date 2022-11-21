@@ -5,8 +5,6 @@ const app = express()
 const route = express.Router()
 
 
-app.use(express.json())
-
 let products = [
     {
         "Id": 1,
@@ -36,6 +34,34 @@ let users = [
         "Email": "isaacabreu499@gmail.com",
         "Senha": "12345"
     },
+    {
+        "Token": "JA5SJ132D",
+        "id": 2,
+        "Nome": "Thiago",
+        "Email": "thiagobr@gmail.com",
+        "Senha": "laele"
+    },
+    {
+        "Token": "KSAKSK12",
+        "id": 3,
+        "Nome": "Silvio",
+        "Email": "BAITOLA@gmail.com",
+        "Senha": "MATADODEPORCO"
+    },
+    {
+        "Token": "a4A222k2H",
+        "id": 4,
+        "Nome": "Daniel",
+        "Email": "Dannrammm@gmail.com",
+        "Senha": "Tecnologo"
+    },
+    {
+        "Token": "FFFFFFFF",
+        "id": 5,
+        "Nome": "Admin",
+        "Email": "Admin@gmail.com",
+        "Senha": "Admin"
+    }
 ]
 
 route.get('/users',(req,res)=>{
@@ -91,5 +117,7 @@ route.delete('/products/delete/:id',(req,res)=>{
 })
 
 app.use(route)
+
+const port = process.env.PORT || 4040
 
 app.listen(4040,()=>console.log("Servidor rodando em localhost:4040"))
